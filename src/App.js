@@ -8,6 +8,7 @@ import User from './comphonent/user/User';
 import GithubState from './context/github/GithubState'
 import AlertState from './context/alert/AlertState'
 import NotFound from './comphonent/Pages/NotFound'
+import Meta from './comphonent/Meta'
 
 import "./App.css";
 
@@ -30,6 +31,7 @@ const App = () => {
     <GithubState>
       <AlertState>
         <Router>
+        <Meta/>
           <div className="App">
             <Navbar />
             <div className="container">
